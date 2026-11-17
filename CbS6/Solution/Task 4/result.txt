@@ -1,0 +1,36 @@
+﻿
+
+Name       : Block_http_conn
+Enabled    : True
+Protocol   : TCP
+LocalPort  : 80
+RemotePort : Any
+Action     : Block
+Profile    : Any
+
+Name       : Allow_rdp_conn
+Enabled    : True
+Protocol   : TCP
+LocalPort  : 3389
+RemotePort : Any
+Action     : Allow
+Profile    : Any
+
+Name       : Block_ftp_conn
+Enabled    : True
+Protocol   : TCP
+LocalPort  : Any
+RemotePort : 21
+Action     : Block
+Profile    : Any
+
+Name       : Block_ping_conn
+Enabled    : True
+Protocol   : ICMPv4
+LocalPort  : Any
+RemotePort : Any
+Action     : Block
+Profile    : Any
+
+
+

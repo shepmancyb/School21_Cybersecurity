@@ -1,0 +1,7 @@
+1. 192.168.1.101
+2. 192.168.1.100
+3. TCP, source порт 4444, порт получения 5555.
+4. -uname -a
+-whoami
+-ls -la /etc
+-cat etc/passwd

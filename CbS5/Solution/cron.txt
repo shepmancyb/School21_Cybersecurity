@@ -1,0 +1,1 @@
+0 0 * * * /usr/sbin/logwatch --detail 10 --range yesterday --service All --output mail --mailto bnurullayev20@gmail.com

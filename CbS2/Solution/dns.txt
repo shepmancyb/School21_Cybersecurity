@@ -1,0 +1,25 @@
+В DNS-запросе (Frame 4, пакет от R2 → R1) в разделе Queries:
+Name:  my.site
+Type:  A     (Host Address — запрос IPv4-адреса)
+Class: IN    (Internet — стандартный класс адресации)
+
+То есть клиент (R2, 10.0.0.2) запрашивает у DNS-сервера (R1, 10.0.0.1)
+IPv4-адрес для имени my.site.
+
+В DNS-ответе (Frame 5, пакет от R1 → R2) в разделе Answers:
+Name:    my.site
+Type:    A
+Class:   IN
+TTL:     10 секунд
+Address: 192.168.100.1 
+
+DNS-запрос:
+  Source IP:Port      = 10.0.0.2 : 57518  
+  Destination IP:Port = 10.0.0.1 : 53     
+
+DNS-ответ:
+  Source IP:Port      = 10.0.0.1 : 53     
+  Destination IP:Port = 10.0.0.2 : 57518
+
+Транспортный протокол: UDP
+Transaction ID запроса и ответа совпадают: 0xa19e
